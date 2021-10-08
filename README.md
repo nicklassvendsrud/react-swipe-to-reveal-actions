@@ -16,6 +16,7 @@
 
 ### 🏠 [Homepage](https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions#readme)
 
+![Demo-gif](./example/rstra_gif.gif)
 
 ## Install
 
