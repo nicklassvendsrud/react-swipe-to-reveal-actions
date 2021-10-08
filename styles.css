@@ -1,0 +1,70 @@
+.rstra-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    box-sizing: border-box;
+}
+
+.rstra-container > div {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    box-sizing: border-box;
+}
+
+.rstra-actions-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rstra-content-container {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.25s ease;
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.rstra-action-button {
+    min-width: 50px;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rstra-dots-button {
+    min-width: 50px;
+    appearance: none;
+    border: none;
+    box-sizing: border-box;
+    color: inherit;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
