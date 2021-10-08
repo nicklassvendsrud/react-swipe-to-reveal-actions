@@ -2,12 +2,20 @@
   "name": "react-swipe-to-reveal-actions",
   "version": "1.0.0",
   "description": "A swipeable (list) item component that can reveal a set of actions - iOS style",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nicklas Svendsrud",
   "license": "ISC",
+  "homepage": "https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions/issues"
+  },
   "dependencies": {
     "react": "^17.0.2",
     "react-swipeable": "^6.2.0"
