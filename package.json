@@ -1,6 +1,6 @@
 {
   "name": "react-swipe-to-reveal-actions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A swipeable (list) item component that can reveal a set of actions - iOS style",
   "main": "index.ts",
   "scripts": {
