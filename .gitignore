@@ -5,3 +5,7 @@ dist-ssr
 *.local
 .idea
 .env
+
+# Ignore test-related files
+/coverage.data
+/coverage/
