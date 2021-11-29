@@ -1,13 +1,13 @@
 {
   "name": "react-swipe-to-reveal-actions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A swipeable (list) item component that can reveal a set of actions - iOS style",
   "main": "index.ts",
   "scripts": {
     "test": "jest --config ./jest.config.js"
   },
   "author": "Nicklas Svendsrud",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions#readme",
   "repository": {
     "type": "git",
