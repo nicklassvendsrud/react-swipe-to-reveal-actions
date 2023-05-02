@@ -93,7 +93,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2021 [Nicklas Svendsrud](https://github.com/nicklassvendsrud).<br />
-This project is [ISC](https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
