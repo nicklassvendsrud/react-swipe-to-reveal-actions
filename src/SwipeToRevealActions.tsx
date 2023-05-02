@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, ReactNode, CSSProperties } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import './styles.css';
 
 type Props = {
-    children: React.ReactNode;
+    children: ReactNode;
     actionButtons: {
-        content: React.ReactNode | Element;
+        content: ReactNode;
         onClick: () => void;
         role?: string;
     }[];
     actionButtonMinWidth: number;
     height?: string;
-    containerStyle?: React.CSSProperties;
+    containerStyle?: CSSProperties;
     onOpen?: () => void;
     onClose?: () => void;
     hideDotsButton?: boolean;
     dotsBtnAriaLabel?: string;
 };
 
-const SwipeToRevealActions = ({
+const SwipeToRevealActions: React.FC<Props> = ({
     children,
     actionButtons,
     containerStyle,

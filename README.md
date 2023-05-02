@@ -1,6 +1,6 @@
 <h1 align="center">react-swipe-to-reveal-actions 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.7-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -16,7 +16,7 @@
 
 ### 🏠 [Homepage](https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions#readme)
 
-![Demo-gif](./example/rstra_gif.gif)
+![Demo-gif](src/example/rstra_gif.gif)
 
 ## Install
 
