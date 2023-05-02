@@ -23,6 +23,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .rstra-content-container {
@@ -38,6 +39,7 @@
     box-sizing: border-box;
     padding-top: 1rem;
     padding-bottom: 0.8rem;
+    z-index: 2;
 }
 
 .rstra-action-button {

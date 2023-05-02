@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, CSSProperties } from 'react';
+import React, { useState, ReactNode, CSSProperties, useId } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import './styles.css';
 
@@ -37,6 +37,7 @@ const SwipeToRevealActions: React.FC<Props> = ({
         onSwiping: (eventData) => handleSwipe(eventData),
         trackMouse: true,
     });
+    const id = useId();
 
     function handlePanStart(e: any) {
         if (e.dir === 'Down' || e.dir === 'Up') {
@@ -75,23 +76,6 @@ const SwipeToRevealActions: React.FC<Props> = ({
         <div className="rstra-container" style={{ height, ...containerStyle }}>
             <div {...handlers}>
                 <div>
-                    <div className="rstra-actions-container" style={{ height }}>
-                        {actionButtons.map((action, index) => (
-                            <div key={`actionKey_${index}`} style={{ height }}>
-                                <button
-                                    className="rstra-action-button"
-                                    onClick={() => handleActionClicked(action.onClick)}
-                                    style={{
-                                        height,
-                                        minWidth: actionButtonMinWidth
-                                    }}
-                                    role={action.role || 'button'}
-                                >
-                                    {action.content}
-                                </button>
-                            </div>
-                        ))}
-                    </div>
                     <div
                       className="rstra-content-container"
                       style={{
@@ -114,6 +98,8 @@ const SwipeToRevealActions: React.FC<Props> = ({
                             }}
                             style={{ height }}
                             aria-label={dotsBtnAriaLabel}
+                            aria-controls={id}
+                            aria-expanded={isExpanded ? 'true' : 'false'}
                           >
                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -122,6 +108,23 @@ const SwipeToRevealActions: React.FC<Props> = ({
                               </svg>
                           </button>
                         )}
+                    </div>
+                    <div className="rstra-actions-container" style={{ height: height, display: isExpanded ? 'flex' : 'none' }} id={id} role="region">
+                        {actionButtons.map((action, index) => (
+                          <div key={`actionKey_${index}`} style={{ height }}>
+                              <button
+                                className="rstra-action-button"
+                                onClick={() => handleActionClicked(action.onClick)}
+                                style={{
+                                    height,
+                                    minWidth: actionButtonMinWidth
+                                }}
+                                role={action.role || 'button'}
+                              >
+                                  {action.content}
+                              </button>
+                          </div>
+                        ))}
                     </div>
                 </div>
             </div>
